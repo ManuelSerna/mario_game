@@ -1,0 +1,47 @@
+<!-- Programming Paradigms Project 7: Multiplayer Game -->
+<!-- Manuel Serna-Aguilera -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "author" content = "Manuel Serna-Aguilera">
+        
+        <title>Mario Multiplayer</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form>
+                        <select id="chatHistory" size="12" style="width:100%"></select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form onsubmit="sendMessage()">
+                        <input type="text" size=50 name="user"><input type="submit" value="Send">
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Set up canvas for game-->
+        <canvas id = "marioCanvas" width = "1000" height = "500" style = "border:4px solid #5f5f5f;"></canvas>
+
+        <script src = "request.js"></script>
+        
+        <script src = "sprite.js"></script>
+        <script src = "background.js"></script>
+        <script src = "mario.js"></script>
+        <script src = "brick.js"></script>
+        <script src = "coin_block.js"></script>
+        <script src = "coin.js"></script>
+
+        <script src = "model.js"></script>
+        <script src = "view.js"></script>
+        <script src = "controller.js"></script>
+        <script src = "game.js"></script>
+    </body>
+</html>
