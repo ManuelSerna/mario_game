@@ -98,7 +98,7 @@ abstract class Sprite
                 images[10] = loadImage("coin.png");
 
                 // Load koopas
-                images[11] = loadImage("green_koopa.png");
+                //images[11] = loadImage("green_koopa.png");
             }
             catch(Exception e)
             {
